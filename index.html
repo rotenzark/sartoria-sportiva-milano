@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Sartoria Sportiva Milano — Maglie da calcio cucite a mano | Via Ciaia 6, Bovisa</title>
 <meta name="description" content="Sartoria artigiana a Bovisa, Milano, dal 2010: maglie da calcio vintage cucite a mano su misura. Via Ignazio Ciaia 6. 4,8 su 41 recensioni Google.">
 <link rel="canonical" href="https://rotenzark.github.io/sartoria-sportiva-milano/">
@@ -20,9 +21,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
@@ -46,11 +45,36 @@
     "postalCode": "20158",
     "addressCountry": "IT"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.5021661, "longitude": 9.1761841 },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "41" },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5021661,
+    "longitude": 9.1761841
+  },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:30", "closes": "13:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "15:00", "closes": "19:30" }
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:30",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "15:00",
+      "closes": "19:30"
+    }
   ]
 }
 </script>
@@ -234,11 +258,11 @@
       <p class="dove-nota" data-i18n="dove.nota">Orari trascritti da quelli scritti a mano sulla vetrina. Su Google ne compaiono altri, aggiornati da terzi: se venite da fuori quartiere, una telefonata prima è la mossa giusta.</p>
     </div>
     <div class="dove-map reveal">
-      <iframe
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 450px"><template><iframe
         title="Mappa: Sartoria Sportiva Milano, Via Ignazio Ciaia 6, Milano"
         data-i18n-title="dove.maptitle"
         src="https://www.google.com/maps?q=Sartoria+Sportiva+Milano,+Via+Ignazio+Ciaia+6,+20158+Milano&output=embed"
-        width="600" height="450" style="border:0" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="600" height="450" style="border:0" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Sartoria%20Sportiva%20Milano%2C%20Via%20Ignazio%20Ciaia%206%2C%2020158%20Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -273,7 +297,7 @@
   </div>
   <p class="foot-credit">
     <span data-i18n="foot.demo">Sito dimostrativo realizzato da</span>
-    <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a>
+    <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a>
   </p>
 </footer>
 
@@ -287,5 +311,6 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
